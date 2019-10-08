@@ -69,7 +69,7 @@
                     </div>
                 @endauth
                 <div data-options="region:'center', border:false" style="overflow:hidden;background:#b7d2ff;">
-                    <h1 style="font-size:30px;text-align: center;padding:10px;font-weight:bold;">{{ env('APP_TITLE', 'NGO')}}</h1>
+                    <h1 style="font-size:30px;text-align: center;padding:10px;font-weight:bold;">{{ env('APP_NAME', 'NGO')}}</h1>
                 </div>
             </div>
 
