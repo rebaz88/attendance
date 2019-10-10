@@ -8,7 +8,7 @@
     <link rel="shortcut icon" type="image/png" href="{{asset('icon.png')}}"/>
 
 
-    <title>{{ config('app.name', 'ngo') }}</title>
+    <title>{{ env('APP_NAME', 'Attendance') }}</title>
 
     <!-- Scripts -->
     <script type="text/javascript" src="{{asset('jeasyui/jquery.min.js')}}"></script>
@@ -84,6 +84,7 @@
                     <div id="dock">
                         <ul style="padding:0 10px 0 5px;margin:3px">
                             <li><span>Home</span><a href="#" onclick="switchMainPanelTab('Home', '')"><img src="/img/dock/home.svg" alt="home" /></a></li>
+                            <li><span>Logs</span><a href="#" onclick="switchMainPanelTab('Logs', '/cp/logs')"><img src="/img/dock/logs.svg" alt="logs" /></a></li>
 
                             @can('view_settings')
                             <li><span>Settings</span><a href="#" onclick="switchMainPanelTab('Settings', '/cp/settings')"><img src="/img/dock/settings.svg" alt="Settings" /></a></li>

@@ -42,3 +42,8 @@ Route::post('/chgpwd', 'Cp\IndexController@chgpwd')->name('cp_chgpwd');
 Route::get('login', 'Cp\LoginController@showLoginForm')->name('cp_login');
 Route::post('login', 'Cp\LoginController@login');
 Route::get('logout', 'Cp\LoginController@logout')->name('cp_logout');
+
+// Log
+Route::get('/logs', 'Cp\LogController@index');
+Route::get('/logs/list', 'Cp\LogController@list');
+Route::get('/logs/import', 'Cp\LogController@import');
